@@ -1,0 +1,229 @@
+/* Basic Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f7f7;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*header*/
+.header{
+    height:0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.topNav{
+    background-color: white;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 2px rgb(235, 235, 235);
+}
+.topNav a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: serif;
+}
+/*section 1*/
+.section1{
+    height:20%;
+    width: 100%;
+    text-align: center;
+    color: rgb(40, 40, 40);
+    padding: 20% 20px 30px 20px;
+}
+.section1 h1{
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.section1 p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(71, 71, 71);
+}
+.yellStroke{
+    color:#ffef00;
+    text-shadow: 
+    1px 1px 0 #ffd500,
+    -1px -1px 0 #ffd500,
+    1px -1px 0 #ffd500,
+    -1px 1px 0 #ffd500;
+}
+/*Input element*/
+button {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+button:active {
+    transform: scale(0.9);
+}
+/*input element */
+input {
+    color: rgb(40, 39, 39);
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 4px 4px 5px rgba(210, 210, 210, 0.498) ;
+    transition: outline 0.2s;
+}
+input:focus {
+    outline: 2px solid white;
+}
+input.error {
+    outline: 2px solid red;
+    animation: vibrate 0.2s linear infinite;
+}
+@keyframes vibrate {
+    0% { transform: translate(1px, 0); }
+    25% { transform: translate(-1px, 0); }
+    50% { transform: translate(1px, 0); }
+    75% { transform: translate(-1px, 0); }
+    100% { transform: translate(0, 0); }
+}
+input::placeholder {
+    color: rgba(186, 186, 186, 0.961);
+}
+
+/* wrapper for input */
+.wrapper {
+    margin-top: 5%;
+    margin-bottom: 50px;
+    width: 60%;
+    max-width: 100%;
+    position: relative;
+    
+}
+
+.wrapper input {
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.wrapper button {
+    background: #ffef00;
+    border-radius: 50px;
+    aspect-ratio: 1;
+    height: 80%;
+    
+    position: absolute;
+    top: 10%;
+    right: 5px;
+}
+
+/*image container box */
+.container{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.photo-gallery{
+    display: flex;
+    gap: 15px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 33.3339%;
+}
+.photo{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 5px rgba(210, 210, 210, 0.498);
+}
+.photo img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    object-fit:fill;
+    padding: 6px;
+}
+.photo a{
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif
+}
+.photo a:hover{
+    color: rgb(169, 169, 169);
+}
+
+/*Footer*/
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+.footer a{
+    font-style: italic;
+    color:#ffef00;
+    font-weight: bold;
+}
+
+/*mobile view*/
+@media (max-width: 500px) {
+
+    .topNav a{
+        font-size: 24px;
+    }
+    .section1 h1{
+        font-size: 34px;
+        margin-top: 10%;
+        margin-bottom: 20px;
+    }
+    .section1 p{
+        font-size: 12px;
+        letter-spacing: 2px;
+        
+    }
+    .wrapper{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    input{
+        font-size: 16px;
+    }
+    .photo-gallery{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .column{
+        gap: 15px;
+        max-width: 100%;
+    }
+    .photo a{
+        font-size: 14px;
+    }
+    .footer p{
+        font-size: 14px;
+    }
+    
+}

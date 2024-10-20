@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Place</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="topNav">
+            <a href="#">Place<span class="yellStroke">V</span>ision</a>
+            <p>EN</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h1>Visit the <span class="yellStroke">Beautiful</span> Places of Your Dreams</h1>
+        <p>Imagine the perfect place you've always wanted to visit!</p>
+    </div>
+
+    <div class="wrapper">
+        <input type="text" id="userInput" placeholder="Type your imaginary place...">
+        <button onclick="submit()">
+            <svg xmlns="http://www.w3.org/2000/svg"  width="32" height="32"
+                viewBox="0 0 24 24" stroke-width="3" stroke="black" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5 12l14 0"></path>
+                <path d="M13 18l6 -6"></path>
+                <path d="M13 6l6 6"></path>
+            </svg>
+        </button>
+    </div>
+<!-- images container -->
+    <div class="container">
+        <div class="photo-gallery">
+            <div class="column">
+                <div class="photo">
+                    <img id="photo1" src="https://images.unsplash.com/photo-1618843808465-befb4ad4a183?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <a href="#" class="loc1">Chilika</a>
+                </div>
+                <div class="photo">
+                    <img id="photo4" src="https://images.unsplash.com/photo-1718696070982-20e85093bca4?q=80&w=2011&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <a href="#" class="loc2">Chilika</a>
+                </div>
+                <div class="photo">
+                    <img id="photo7" src="https://images.unsplash.com/photo-1587390406483-0363ebba0a16?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <a href="#" class="loc3">Chilika</a>
+                </div>
+            </div>
+
+            <!-- column 2-->
+            <div class="column">
+                <div class="photo">
+                    <img id="photo2" src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3" alt="">
+                    <a href="" class="loc4">Chilika</a>
+                </div>
+                <div class="photo">
+                    <img id="photo5" src="https://images.unsplash.com/photo-1587390406483-0363ebba0a16?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
+                    <a href="#" class="loc5">Chilika</a>
+                </div>
+                <div class="photo">
+                    <img id="photo8" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ZJaatkWG7eZoyWGN2xi_gkp2qx5OQqjcnA&s">
+                    <a href="#" class="loc6">Chilika</a>
+                </div>
+            </div>
+
+            <!-- column 3-->
+            <div class="column">
+                <div class="photo">
+                    <img id="photo3" src="https://images.unsplash.com/photo-1623003495469-9085a7ae8c58?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <a href="" class="loc7">Chilika</a>
+                </div>
+                <div class="photo">
+                    <img id="photo6" src="https://images.unsplash.com/photo-1618843808465-befb4ad4a183?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <a href="#" class="loc8">Chilika</a>
+                </div>
+                <div class="photo">
+                    <img id="photo9" src="https://images.unsplash.com/photo-1728209919346-767a3ba1a98a?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <a href="#" class="loc9">Chilika</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made with ❤️ by Team <a href="https://github.com/DevPurna/Imaginary-place-search-website" target="_blank"><span>CodeRush</span></a></p>
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>
